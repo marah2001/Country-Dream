@@ -7,16 +7,37 @@ public class Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-          int counter = 0;
-        while (counter >=20)  {
-            int randomNumber = Random.Range(1, 21);
-            Debug.Log("Hello, this is number " + randomNumber);
-            counter++;
+           int counter;
+
+          int randomNumber = Random.Range(1, 21);
+
+        for (counter =0; counter < randomNumber;counter++) 
+         {
             
-             if(randomNumber == 5)  continue;
-             else if(randomNumber == 15)  break;
+            Debug.Log("Hello, this is number " + randomNumber);
         
-            Debug.Log(randomNumber);
+             if(randomNumber == 5) { 
+
+                  continue;
+                  } 
+             
+
+             else if(randomNumber == 15) {  
+                
+                 break;
+                 } 
+
+            //    Debug.Log(randomNumber);
+        //   int counter = 0;
+        // while (counter >=20)  {
+        //     int randomNumber = Random.Range(1, 21);
+        //     Debug.Log("Hello, this is number " + randomNumber);
+        //     counter++;
+            
+        //      if(randomNumber == 5)  continue;
+        //      else if(randomNumber == 15)  break;
+        
+        //     Debug.Log(randomNumber);
           
          }
     // Exercise 2
